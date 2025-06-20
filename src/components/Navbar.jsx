@@ -7,6 +7,8 @@ import { FaCirclePlay } from "react-icons/fa6";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Reel from "./Reel";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import video from "../assets/video.mp4";
+
 const Navbar = () => {
   const navBoxRef = useRef();
   const navRef = useRef();
@@ -84,7 +86,7 @@ const Navbar = () => {
           <h1 className="nav-h1-left text-lg font-medium tracking-wide text-white">
             The Tranquil Agency.
           </h1>
-          <img src="public/rejouice.svg" alt="" className="absolute  nav-logo opacity-0" />
+          <img src="public/tranquil.svg" alt="" className="absolute nav-logo opacity-0 w-26 h-auto" />
         </a>
         <h1
           onClick={() => setShowNav(true)}
@@ -107,24 +109,22 @@ const Navbar = () => {
         </h1>
 
         <div className="w-full flex justify-start md:justifyBetween flex-col md:flex-row  gap-20 md:gap-40 ">
-          <div className="flex-1    content-start h-full">
-            <img src="rejouice.svg" className="mb-1" alt="" />
+          <div className="flex-1 content-start h-full">
+            {/* Resized logo to match reference */}
+            <img src="tranquil.svg" className="mb-1 w-20 h-auto" alt="" />
 
             <div className="flex flex-col w-7/12 ">
-              <video
-                autoPlay
-                muted loop
-                src="https://prismic-io.s3.amazonaws.com/rejouice/3c8eec5e-c857-4fd3-9add-a9e6035a160c_RJ-2.0-Video+background+5_1+%281%29.mp4"
-                className="w-full h-full object-cover object-center"
-              ></video>
+              
+              <video src={video} autoPlay muted loop className='w-full h-full object-contain object-center'></video>
+              
               <div className="justifyBetween mt-1">
                 <div className="flexCenter">
-                  <FaCirclePlay className="text-black" />
-                  <h4 onClick={()=>setReelPlay(true)} className="underline-hover-effect  text-black  cursor-pointer ml-1 font-medium">
+                  <FaCirclePlay className="text-white" />
+                  <h4 onClick={()=>setReelPlay(true)} className="underline-hover-effect  text-white  cursor-pointer ml-1 font-medium">
                     Play reel
                   </h4>
                 </div>
-                <h4 className=" text-black  ml-1 font-medium"> —01:18</h4>
+                <h4 className=" text-white  ml-1 font-medium"> —01:18</h4>
               </div>
             </div>
           </div>
@@ -172,7 +172,7 @@ const Navbar = () => {
                 transition={{ duration: 0.3 }}
                 className=" text-black block "
               >
-                Take a Seat
+                Stay calm
               </motion.span>
 
               <motion.span
@@ -181,7 +181,7 @@ const Navbar = () => {
                 transition={{ duration: 0.3 }}
                 className=" inline-block text-white mix-blend-difference"
               >
-                Take a Seat
+                Stay calm
               </motion.span>
             </motion.button>
           </div>
@@ -189,7 +189,7 @@ const Navbar = () => {
 
         <div className=" flex flex-col md:flex-row items-start  md:justifyBetween border-t-[1px] py-2 border-black">
           <h4 className="text-base">
-            Tomorrow's Brands, Today.<sup className="text-xs font-thin">Tm</sup>
+            Reclaim your Wellness.<sup className="text-xs font-thin">TQ</sup>
           </h4>
           <div className="flexCenter gap-2">
             <motion.div whileHover="hover" className="flexCenter  ">
@@ -218,7 +218,7 @@ const Navbar = () => {
                variants={{ hover: { rotate: 0 } }}
                initial={{ rotate: -45 }}
                transition={{ duration: 0.3 }}
-              >
+            >
                 <IoIosArrowRoundForward className="text-2xl" />
               </motion.span>
             </motion.div>

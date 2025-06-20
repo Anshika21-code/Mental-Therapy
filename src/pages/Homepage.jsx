@@ -7,6 +7,8 @@ import { FaArrowTurnDown } from "react-icons/fa6";
 import { IoReturnDownForwardSharp } from "react-icons/io5";
 import VideoOverlay from "../components/VideoOverlay";
 import Slider from "../components/Slider";
+import video from "../assets/video.mp4";
+
 
 const Homepage = () => {
   const parentRef = useRef();
@@ -175,13 +177,7 @@ const Homepage = () => {
       <Loader />
       <Reel playReel={reelPlay} setReelPlay={setReelPlay} />
       <div className="w-full h-screen bg-red-300/20 relative">
-        <video
-          autoPlay
-          muted
-          loop
-          src="https://prismic-io.s3.amazonaws.com/rejouice/658ef98d531ac2845a270509_RJ-2-0-Videobackground_compressed.mp4"
-          className="h-screen w-full absolute object-cover object-center top-0 left-0 z-[9]"
-        ></video>
+        <video src={video} autoPlay muted loop className="h-screen w-full absolute object-cover object-center top-0 left-0 z-[8]"></video>
         <div
           ref={parentRef}
           className="relative top-0 left-0  z-[15]  h-screen w-full flex items-center lg:items-end justify-center"
@@ -189,13 +185,13 @@ const Homepage = () => {
           <div
             id="crsr"
             onClick={() => setReelPlay(true)}
-            className=" absolute top-0 left-0  -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full bg-black  invisible lg:visible  flexCenter select-none"
+            className=" absolute top-0 left-0  -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full bg-[#EAE4D5]  invisible lg:visible  flexCenter select-none"
           >
             Play reel
           </div>
 
           <h1 className="  overflow-hidden    h-[29vw] lg:h-[26vw] ">
-            {"rejouice".split("").map((letter, idx) => (
+            {"tranquil".split("").map((letter, idx) => (
               <span
                 className="hero-span inline-block text-[25vw] lg:text-[27vw] font-medium font-Rejoice text-white leading-[27vw]"
                 key={idx}
@@ -268,21 +264,21 @@ const Homepage = () => {
             </h5>
           </div>
 
-          <div className="w-full h-[50vh] lg:h-auto  flex justify-between  overflow-x-scroll   mt-12 lg:mt-40">
+          <div className="w-full h-[50vh] lg:h-auto  flex justify-between  overflow-x-scroll   mt-12 lg:mt-40 ">
             <VideoOverlay
               videoSrc="https://videos.pexels.com/video-files/6875571/6875571-hd_1080_1920_25fps.mp4"
-              imageSrc="/assets/imgs/truck.jpg"
-              logoSrc="/assets/imgs/rivian.avif"
+              imageSrc="/assets/imgs/seasonal.jpg "
+              logoSrc="/assets/imgs/seasonal.svg "
             />
             <VideoOverlay
               videoSrc="https://videos.pexels.com/video-files/6499155/6499155-uhd_2160_3840_25fps.mp4" 
-              imageSrc="/assets/imgs/oura.jpg"
-              logoSrc="/assets/imgs/oura-svg.svg"
+              imageSrc="/assets/imgs/vr.jpg  "
+              logoSrc="/assets/imgs/vr.svg"
             />
             <VideoOverlay
               videoSrc="https://videos.pexels.com/video-files/30775907/13164211_2160_3840_30fps.mp4"
-              imageSrc="/assets/imgs/moxon.jpg"
-              logoSrc="/assets/imgs/moxon-svg.svg"
+              imageSrc="/assets/imgs/nature.jpg"
+              logoSrc="/assets/imgs/nature-svg.svg"
             />
           </div>
         </div>
