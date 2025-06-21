@@ -266,17 +266,17 @@ const Homepage = () => {
 
           <div className="w-full h-[50vh] lg:h-auto  flex justify-between  overflow-x-scroll   mt-12 lg:mt-40 ">
             <VideoOverlay
-              videoSrc="https://videos.pexels.com/video-files/6875571/6875571-hd_1080_1920_25fps.mp4"
+              videoSrc="https://videos.pexels.com/video-files/6231393/6231393-sd_540_960_25fps.mp4"
               imageSrc="/assets/imgs/seasonal.jpg "
               logoSrc="/assets/imgs/seasonal.svg "
             />
             <VideoOverlay
-              videoSrc="https://videos.pexels.com/video-files/6499155/6499155-uhd_2160_3840_25fps.mp4" 
+              videoSrc="https://videos.pexels.com/video-files/8098055/8098055-sd_360_640_30fps.mp4" 
               imageSrc="/assets/imgs/vr.jpg  "
               logoSrc="/assets/imgs/vr.svg"
             />
             <VideoOverlay
-              videoSrc="https://videos.pexels.com/video-files/30775907/13164211_2160_3840_30fps.mp4"
+              videoSrc="https://videos.pexels.com/video-files/15287153/15287153-sd_540_960_30fps.mp4"
               imageSrc="/assets/imgs/nature.jpg"
               logoSrc="/assets/imgs/nature-svg.svg"
             />

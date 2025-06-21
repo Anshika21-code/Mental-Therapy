@@ -24,7 +24,6 @@ const VideoOverlay = ({ videoSrc, imageSrc,logoSrc }) => {
         loop
         src={videoSrc}
         className="w-full h-full object-cover object-center"
-        
       />
       <img
         src={imageSrc}
