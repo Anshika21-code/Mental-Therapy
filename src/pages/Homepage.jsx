@@ -7,7 +7,7 @@ import { FaArrowTurnDown } from "react-icons/fa6";
 import { IoReturnDownForwardSharp } from "react-icons/io5";
 import VideoOverlay from "../components/VideoOverlay";
 import Slider from "../components/Slider";
-import video from "../assets/video.mp4";
+import video from "../assets/video3.mp4";
 
 
 const Homepage = () => {
@@ -221,7 +221,7 @@ const Homepage = () => {
             .split(" ")
             .map((word, idx) => (
               <p key={idx} className="para1  mb-1 mr-3  overflow-hidden">
-                <span className="lines inline-block   text-2xl lg:text-6xl   ">
+                <span className="lines inline-block   text-xl lg:text-6xl   ">
                   {word}
                 </span>
               </p>

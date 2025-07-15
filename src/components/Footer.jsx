@@ -116,7 +116,7 @@ const Footer = () => {
 
         <div className="footer-sec-right  md:w-2/6 flex flex-col md:flex-row md:justify-between items-end md:items-start ">
           <h5 className="md:text-xl leading-tight font-medium text-offwhite ">
-            tranuil@gmail.com
+            tranquil@gmail.com
           </h5>
           <h5 className="md:text-xl leading-tight font-medium text-offwhite">
             Created by Student of VIT Bhopal 

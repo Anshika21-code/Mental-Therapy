@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { RxCross2 } from "react-icons/rx";
 import gsap from 'gsap'
-import video from '../assets/video.mp4'
+import video from '../assets/video3.mp4'
 
 const Reel = ({playReel,setReelPlay}) => {
     const videoRef=useRef(null)

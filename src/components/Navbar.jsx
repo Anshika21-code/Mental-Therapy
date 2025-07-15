@@ -9,6 +9,8 @@ import Reel from "./Reel";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import video from "../assets/video.mp4";
 
+
+
 const Navbar = () => {
   const navBoxRef = useRef();
   const navRef = useRef();
@@ -75,7 +77,7 @@ const Navbar = () => {
   const navoption = [
     { id: 1, pageName: "Home", },
     { id: 2, pageName: "Services",  },
-    { id: 3, pageName: "About",   },
+    { id: 3, pageName: "About", },
     { id: 4, pageName: "Contact", },
   ];
   return (
